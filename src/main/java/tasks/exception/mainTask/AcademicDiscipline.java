@@ -1,0 +1,16 @@
+package tasks.exception.mainTask;
+
+public enum AcademicDiscipline {
+    HIGHER_MATHEMATICS,
+    ANALYTICS,
+    HYDRAULICS,
+    PERSONNEL_MANAGEMENT,
+    SELF_MANAGEMENT,
+    SOFT_SKILLS,
+    ELECTRICAL_ENGINEERING,
+    ECOLOGY,
+    ENGLISH,
+    CONSTRUCTIONS,
+    ALGORITHMS,
+    COMPUTER_LANGUAGE
+}
