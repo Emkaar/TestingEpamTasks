@@ -5,8 +5,7 @@ import java.util.Set;
 
 public class University {
     private static University INSTANCE;
-
-    private Set<FacultyDisciplines>universityFaculties;
+    private Set<Faculty>universityFaculties;
     private University(){
         universityFaculties = new HashSet<>();
     }
@@ -18,11 +17,15 @@ public class University {
         return INSTANCE;
     }
 
-    public void addUniversityGroup(StudentsGroup studentsGroup){
-        universityFaculties.add(studentsGroup);
+    public void addUniversityFaculty(Faculty faculty){
+        universityFaculties.add(faculty);
     }
 
-    public Set<Faculty> getUniversityGroups() {
+    public Set<Faculty> getUniversityFaculties() {
         return universityFaculties;
+    }
+
+    public void setUniversityFaculties(Set<Faculty> universityFaculties) {
+        this.universityFaculties = universityFaculties;
     }
 }
